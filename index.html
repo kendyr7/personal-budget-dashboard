@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Document</title>
+</head>
+
+<body class="theme-dark">
+
+    <div id="theme-switcher" class="theme-switcher">
+        <i class="fa-solid fa-circle-dot" style="color: #F0F1F4;" data-theme="theme-light"></i>
+        <i class="fa-solid fa-circle-dot" style="color: #4c4752;" data-theme="theme-dark"></i>
+        <i class="fa-solid fa-circle-dot" style="color: #006eff;" data-theme="theme-custom"></i>
+    </div>
+
+    <div class="dashboard ">
+
+        <!-- LEFT SIDE BAR ICONS -->
+        <div class="sidebar place-items-center ">
+            <div class="sidebar-items">
+                <div class="sidebar-item s-iten-1  place-items-center ">
+                    <a href="#">
+                        <i class="ri-layout-grid-line "></i>
+                    </a>
+                </div>
+                <div class="sidebar-item s-iten-2 place-items-center">
+                    <a href="./table.html">
+                        <i class="ri-sound-module-line"></i>
+                    </a>
+                </div>
+                <div class="sidebar-item s-iten-3 place-items-center">
+                    <a href="#">
+                        <i class="ri-user-line"></i>
+                    </a>
+                </div>
+                <div class="sidebar-item s-iten-4 place-items-center">
+                    <a href="./chart.html">
+                        <i class="ri-line-chart-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- /LEFT SIDE BAR ICONS -->
+
+        <div class="container d-grid">
+
+            <!-- MAIN BODY WITH KPI CARDS -->
+            <section class="main-container">
+                <div class="top-bar margin-b">
+                    <h1 class="title ">Dashboard</h1>
+                    <button class="btn place-items-center">
+                        <i class="ri-menu-3-line open-menu-icon"></i>
+                    </button>
+                </div>
+
+                <div class="task-container d-grid margin-b">
+                    <div class="tracking card-1">
+                        <p class="deadline">187</p>
+                        <h2 class="tracking">Total Tracking Balance</h2>
+                        <p>allocated not covered by income</p>
+                        <div class="start-testing-container d-flex">
+                            <p>Ready to track?</p>
+                            <a href="#">Start tracking</a>
+                        </div>
+                    </div>
+                    <div class="task-container-2 d-grid">
+                        <div class="homework card-1">
+                            <i class="ri-checkbox-circle-line check-mark"></i>
+                            <h4>Period Saving Rate</h4>
+                            <p>You are saving 8% of your income</p>
+                        </div>
+                        <div class="reading card-1">
+                            <i class="ri-checkbox-circle-line check-mark"></i>
+                            <h4>N of tracked records</h4>
+                            <p>96 this year</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CHART SECTION -->
+                <div class="group-task-container d-grid margin-b">
+                    <div class="main-container-chart">
+                        <div id="areachart"></div>
+                    </div>
+                </div>
+                <!-- / CHART SECTION -->
+
+            </section>
+            <!-- /MAIN BODY WITH KPI CARDS -->
+
+            <!-- RIGHT SIDEBAR -->
+            <section class="secondary-container ">
+                <div class="profile d-flex">
+                    <div class="profile-img-box">
+                        <img src="assets/images/kendyr.jpg" alt="">
+                    </div>
+                    <h2 class="name">Kendyr Quintanilla</h2>
+                    <p>Software developer</p>
+                    <div class="course discount card-1 d-flex">
+                        <div>
+                            <h4>Check you wallets</h4>
+                            <p>See your historical data</p>
+                        </div>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+                <div class="courses-progress">
+                    <h2 class="progress-title">Savings</h2>
+                    <div class="course card-1 d-flex">
+                        <p class="progress-text-1">63%</p>
+                        <div class="progress-icon progress-bg-1 place-items-center">
+                            <i class="ri-pencil-fill"></i>
+                        </div>
+                        <div>
+                            <h3>% Expenses</h3>
+                            <p>Learn new rules </p>
+                        </div>
+                    </div>
+                    <div class="course card-1 d-flex">
+                        <p class="progress-text-2">75%</p>
+                        <div class="progress-icon progress-bg-2 place-items-center">
+                            <i class="ri-book-2-line"></i>
+                        </div>
+                        <div>
+                            <h3>% Incomes</h3>
+                            <p>Learn 5 new words </p>
+                        </div>
+                    </div>
+                    <div class="course card-1 d-flex">
+                        <p class="progress-text-3">84%</p>
+                        <div class="progress-icon progress-bg-3 place-items-center">
+                            <i class="ri-book-open-line"></i>
+                        </div>
+                        <div>
+                            <h3>% Savings</h3>
+                            <p>Train your skill </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- / RIGHT SIDEBAR -->
+
+        </div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+<script src="./assets/chart.js"></script>
+<script src="./assets/main.js"></script>
+</html>
