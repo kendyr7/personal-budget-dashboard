@@ -35,20 +35,6 @@
          --font-color: #ccc;
      }
 
-     /* Custom Theme (You can customize this theme as per your requirements) */
-     .theme-custom {
-         --primary-background-color: #e6f2ff;
-         --secondary-background-color: #bfdeff;
-         --tertiary-background-color: #80bdff;
-         --dark-purple-color: #409cff;
-         --normal-purple-color: #e6f2ff;
-         --light-purple-color: #005cbf;
-         --dark-orange-color: #e6f2ff;
-         --normal-orange-color: #e6f2ff;
-         --light-orange-color: #001226;
-         --red-color: #006aff;
-         --font-color: #002a65;
-     }
 
 /* fonts */
 --font-family: 'Poppins', sans-serif;
@@ -75,6 +61,7 @@
      bottom: 20px;
      left: 20px;
      z-index: 999; /* Set a high z-index to ensure they appear above other content */
+     transition: transform 5s ease;
  }
 
  .theme-switcher i {
@@ -87,6 +74,7 @@
      font-size: 16px; /* Decrease the font size */
      color: #fff;
      margin-bottom: 5px; /* Add margin between the icons */
+     transition: background-color 5s ease; /* Add transition to theme switcher button icon */
  }
 
  /* Base styles */
@@ -95,7 +83,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     color: var(--font-color)
+     color: var(--font-color);
  }
 
  html {
@@ -111,7 +99,7 @@
  
  h1 {
      font-size: var(--font-size-xl);
-     color: var(--dark-purple-color)
+     color: var(--dark-purple-color);
  }
  
  h2 {
@@ -197,12 +185,6 @@
      transition: .3s;
  }
  
-/* .card-2 {
-     padding: var(--padding-md);
-     border-radius: 1rem;
-     transition: .3s;
- }*/
- 
  .card-1:hover {
      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
  }
@@ -225,77 +207,85 @@
      flex-direction: column;
      background-color: var(--primary-background-color);
      height: 100%;
-     padding: 0 2rem;
+     /*padding: 0 0.5rem;*/
  }
- 
+
  .sidebar-item {
-     padding: 1rem;
-     margin: 4rem 0;
+     padding: 0.3rem;
+     margin: 4rem 1rem;
      border-radius: 50%;
      transition: .3s;
  }
- 
- .s-iten-1 {
-     background-color: var(--normal-orange-color);
-     color: #fff;
+ .s-item-profile img {
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
  }
-
-     .s-iten-1 a {
-         display: block; /* Ensure the <a> takes up the entire space of its parent */
-         width: 50px; /* Set a fixed width for the circular element */
-         height: 50px; /* Set a fixed height for the circular element */
-         border-radius: 50%; /* Maintain circular shape */
-         text-align: center; /* Center the icon */
-         line-height: 50px; /* Vertically center the icon */
+ .s-item-home {
+     background-color: var(--normal-orange-color);
+ }
+ .s-item-home a:hover {
+     background-color: var(--normal-orange-color);
+ }
+     .s-item-home a {
+         display: block;
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         text-align: center;
+         line-height: 50px;
          transition: .3s;
      }
 
- .s-iten-1 a:hover {
-     background-color: var(--normal-orange-color);
- }
-
- .s-iten-2:hover {
-     color: #fff;
-     background-color: var(--dark-purple-color);
- }
-
-     .s-iten-2 a {
-         display: block; /* Ensure the <a> takes up the entire space of its parent */
-         width: 50px; /* Set a fixed width for the circular element */
-         height: 50px; /* Set a fixed height for the circular element */
-         border-radius: 50%; /* Maintain circular shape */
-         text-align: center; /* Center the icon */
-         line-height: 50px; /* Vertically center the icon */
-         transition: .3s;
-     }
- 
- .s-iten-3:hover {
-     color: #fff;
+ .s-item-1:hover {
      background-color: var(--red-color);
  }
+ .s-item-1 a {
+     display: block;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 50px;
+     transition: .3s;
+ }
 
-     .s-iten-3 a {
-         display: block; /* Ensure the <a> takes up the entire space of its parent */
-         width: 50px; /* Set a fixed width for the circular element */
-         height: 50px; /* Set a fixed height for the circular element */
-         border-radius: 50%; /* Maintain circular shape */
-         text-align: center; /* Center the icon */
-         line-height: 50px; /* Vertically center the icon */
+ .s-item-2:hover {
+     background-color: var(--light-purple-color);
+ }
+     .s-item-2 a {
+         display: block;
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         text-align: center;
+         line-height: 50px;
+         transition: .3s;
+     }
+ 
+ .s-item-3:hover {
+     background-color: var(--red-color);
+ }
+     .s-item-3 a {
+         display: block;
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         text-align: center;
+         line-height: 50px;
          transition: .3s;
      }
 
- .s-iten-4:hover {
-     color: #fff;
+ .s-item-4:hover {
      background-color: var(--normal-orange-color);
  }
-
-     .s-iten-4 a {
-         display: block; /* Ensure the <a> takes up the entire space of its parent */
-         width: 50px; /* Set a fixed width for the circular element */
-         height: 50px; /* Set a fixed height for the circular element */
-         border-radius: 50%; /* Maintain circular shape */
-         text-align: center; /* Center the icon */
-         line-height: 50px; /* Vertically center the icon */
+     .s-item-4 a {
+         display: block;
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+         text-align: center;
+         line-height: 50px;
          transition: .3s;
      }
  
@@ -353,9 +343,8 @@
      border-radius: 1rem;
  }
 
-
- .task-container,
- .task-container-2 {
+ .card-container,
+ .card-container-2 {
      grid-template-columns: 1fr 1fr;
      gap: var(--gap);
  }
@@ -364,7 +353,7 @@
      background-color: var(--dark-purple-color);
  }
  
- .deadline {
+ .total-tracking-balance {
      text-transform: uppercase;
  }
  
@@ -376,12 +365,12 @@
      color: var(--normal-purple-color);
  }
  
- .start-testing-container {
+ .start-tracking-container {
      align-items: center;
      justify-content: space-between;
  }
  
- .start-testing-container a {
+ .start-tracking-container a {
      color: #fff;
  }
  
@@ -391,122 +380,44 @@
      margin-bottom: var(--margin-sm);
  }
  
- .homework {
+ .saving-period {
      background-color: var(--light-orange-color);
  }
  
- .homework .check-mark {
+ .saving-period .check-mark {
      color: var(--normal-orange-color);
  }
  
- .homework h4 {
+ .saving-period h4 {
      color: var(--dark-orange-color);
  }
  
- .homework p {
+ .saving-period p {
      color: var(--normal-orange-color);
  }
  
- .reading {
+ .records {
      background-color: var(--normal-purple-color);
  }
  
- .reading .check-mark {
+ .records .check-mark {
      color: var(--primary-background-color);
  }
  
- .reading h4 {
+ .records h4 {
      color: var(--primary-background-color);
  }
  
- .reading p {
+ .records p {
      color: var(--primary-background-color);
  }
  
- .group-task-container {
-     /*grid-template-columns: 3fr 1fr;*/
+ .chart-container {
+     grid-template-columns: 3fr 1fr;
      gap: var(--gap);
  }
  
-/* .bell-icon {
-     color: var(--dark-orange-color);
-     background-color: var(--light-orange-color);
-     padding: var(--padding-xsm);
-     border-radius: 1rem;
-     display: inline-block;
-     margin-bottom: var(--margin-sm);
- }*/
- 
- .progress-cover {
-     position: relative;
-     height: 1rem;
-     width: 80%;
-     background-color: #F4F5F7;
-     border-radius: 5px;
-     overflow: hidden;
- }
- 
- .progress {
-     position: absolute;
-     top: 0;
-     left: 0;
-     height: 100%;
-     width: 75%;
-     background-color: var(--normal-orange-color);
- }
- 
- .group-info {
-     box-shadow: 0 2px 38px 0 rgba(0, 0, 0, 0.1);
- }
- 
- .group-homework {
-     background-color: var(--normal-orange-color);
-     align-items: center;
-     justify-content: space-between;
-     margin-block: var(--margin-sm);
-     color: #fff;
- }
- 
- .group-homework-title {
-     color: var(--dark-orange-color);
- }
- 
- .today-lesson {
-     justify-content: space-between;
- }
- 
- .grammer-course {
-     grid-template-columns: 1fr 1fr;
-     gap: var(--gap);
- }
- 
- .course {
-     align-items: center;
-     justify-content: space-between;
-     border: 1px solid rgba(0, 0, 0, .1);
-     margin-bottom: 2rem;
-     width: 100%;
- }
- 
- .grammer,
- .dictionary {
-     align-items: center;
-     gap: var(--gap);
- }
- 
- .grammer-icon {
-     color: var(--dark-purple-color);
-     background-color: var(--light-purple-color);
-     padding: var(--padding-xsm);
-     border-radius: 1rem;
- }
- 
- .dictionary-icon {
-     color: var(--dark-orange-color);
-     background-color: var(--light-orange-color);
-     padding: var(--padding-xsm);
-     border-radius: 1rem;
- }
+
  /* secondary */
  
  .secondary-container {
@@ -536,7 +447,15 @@
      height: 100%;
      object-fit: cover;
  }
- 
+
+ .course {
+     align-items: center;
+     justify-content: space-between;
+     border: 1px solid rgb(0,0,0,.1);
+     margin-bottom: 2rem;
+     width: 100%;
+ }
+
  .discount {
      margin: 2rem 0;
  }
@@ -604,7 +523,7 @@
       ::-webkit-scrollbar {
          width: 0;
      }
-     .task-container {
+     .card-container {
          grid-template-columns: 1fr;
      }
  }
@@ -613,17 +532,18 @@
      section {
          padding: var(--padding-md);
      }
-     .group-task-container {
+     .chart-container {
          grid-template-columns: 1fr;
      }
-     .grammer-course {
+     .main-container-chart {
          grid-template-columns: 1fr;
      }
+
  }
  
  @media screen and (max-width: 550px) {
      .sidebar {
-         padding: 0 1rem;
+         display: none;
      }
      .logo {
          top: 2rem;
@@ -631,7 +551,7 @@
      section {
          padding: var(--padding-sm);
      }
-     .task-container-2 {
+     .card-container-2 {
          grid-template-columns: 1fr;
      }
      h1 {

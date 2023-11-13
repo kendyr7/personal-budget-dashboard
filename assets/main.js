@@ -10,12 +10,10 @@ function toggleTheme() {
     document.body.classList.remove(currentTheme);
 
     // Toggle to the next theme
-    if (currentTheme === "theme-light") {
-        currentTheme = "theme-dark";
-    } else if (currentTheme === "theme-dark") {
-        currentTheme = "theme-custom";
-    } else {
+    if (currentTheme === "theme-dark") {
         currentTheme = "theme-light";
+    } else {
+        currentTheme = "theme-dark";
     }
 
     // Apply the new theme class
