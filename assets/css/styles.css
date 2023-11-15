@@ -200,7 +200,7 @@
      top: 0;
      left: 0;
      height: 100%;
-     width: 100vw;
+     width: 100%;
  }
  
  .sidebar {
@@ -337,12 +337,6 @@
      background-color: var(--secondary-background-color);
  }
 
- .main-container-chart {
-     background-color: var(--primary-background-color);
-     padding: var(--padding-xsm);
-     border-radius: 1rem;
- }
-
  .card-container,
  .card-container-2 {
      grid-template-columns: 1fr 1fr;
@@ -412,12 +406,6 @@
      color: var(--primary-background-color);
  }
  
- .chart-container {
-     grid-template-columns: 3fr 1fr;
-     gap: var(--gap);
- }
- 
-
  /* secondary */
  
  .secondary-container {
@@ -509,6 +497,9 @@
      }
      .secondary-container h2 {
          font-size: 2rem;
+     }
+     .main-container {
+         width: 100%;
      }
  }
  

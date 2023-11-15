@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+-->
+
     <!-- Remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/chart-styles.css">
     <title>Document</title>
 </head>
 
@@ -95,8 +101,109 @@
 
                 <!-- CHART SECTION -->
                 <div class="chart-container d-grid margin-b">
-                    <div class="main-container-chart">
+                    <!--<div class="main-container-chart">
                         <div id="areachart"></div>
+                    </div>-->
+
+                    <!-- CHART INCOME -->
+                    <div class="main-container-chart">
+                        <div class="grid">
+                            <dl>
+                                <dt class="income-title">Income</dt>
+                                <dd class="income-value">$23,635</dd>
+                            </dl>
+                            <dl>
+                                <dt class="expense-title">Expense</dt>
+                                <dd class="expense-value">-$18,230</dd>
+                            </dl>
+                        </div>
+
+                        <div id="areachart"></div>
+                    </div>
+
+                    <!-- DONUT CHART -->
+                    <div class="container2">
+                        <h5 class="title2">Website traffic</h5>
+                        <div class="devices">
+                            <div class="device">
+                                <input id="desktop" type="checkbox" value="desktop">
+                                <label for="desktop">Desktop</label>
+                            </div>
+                            <div class="device">
+                                <input id="tablet" type="checkbox" value="tablet">
+                                <label for="tablet">Tablet</label>
+                            </div>
+                            <div class="device">
+                                <input id="mobile" type="checkbox" value="mobile">
+                                <label for="mobile">Mobile</label>
+                            </div>
+                        </div>
+                        <div class="chart" id="donut-chart"></div>
+                    </div>
+
+                </div>
+
+                <div class="chart-container2">
+                    <!-- CHART PROFIT -->
+                    <div class="main-container-chart">
+                        <div class="chart-container">
+                            <div class="profit-container">
+                                <dl>
+                                    <dt class="profit-title">Profit</dt>
+                                    <dd class="profit-value">$5,405</dd>
+                                </dl>
+                                <div>
+                                        <span class="profit-rate">
+                                          <svg class="profit-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V1m0 0L1 5m4-4 4 4"/>
+                                          </svg>
+                                          Profit rate 23.5%
+                                        </span>
+                                </div>
+                            </div>
+
+                            <div class="income-expense-container">
+                                <dl>
+                                    <dt class="income-title">Income</dt>
+                                    <dd class="income-value">$23,635</dd>
+                                </dl>
+                                <dl>
+                                    <dt class="expense-title">Expense</dt>
+                                    <dd class="expense-value">-$18,230</dd>
+                                </dl>
+                            </div>
+
+                            <div id="bar-chart"></div>
+
+                            <div class="report-container">
+                                <div class="report-controls">
+                                    <button id="dropdownDefaultButton" class="dropdown-button" type="button">
+                                        Last 6 months
+                                        <svg class="dropdown-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                        </svg>
+                                    </button>
+                                    <div id="lastDaysdropdown" class="dropdown-menu">
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="#" class="dropdown-item">Yesterday</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item">Today</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item">Last Week</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="report-link"> Revenue Report
+                                        <svg class="report-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- / CHART SECTION -->
@@ -164,4 +271,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
 <script src="./assets/chart.js"></script>
 <script src="./assets/main.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
+
 </html>
