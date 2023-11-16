@@ -25,3 +25,13 @@ document.body.classList.add(currentTheme);
 
 // Add a click event listener to the theme switcher
 themeSwitcher.addEventListener("click", toggleTheme);
+
+
+const hideButton = document.getElementById('hideSecondary');
+const secondaryContainer = document.querySelector('.secondary-container');
+const mainContainer = document.querySelector('.main-container');
+
+hideButton.addEventListener('click', function() {
+    secondaryContainer.classList.toggle('hidden');
+    mainContainer.classList.toggle('expanded');
+});

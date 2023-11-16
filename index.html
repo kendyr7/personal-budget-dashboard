@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!--  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
--->
-
     <!-- Remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -19,7 +13,6 @@
 </head>
 
 <body>
-
     <div id="theme-switcher" class="theme-switcher">
         <i class="fa-solid fa-circle-dot" style="color: #F0F1F4;" data-theme="theme-light"></i>
     </div>
@@ -68,19 +61,21 @@
             <!-- MAIN BODY WITH KPI CARDS -->
             <section class="main-container">
 
-
-                <div class="top-bar margin-b">
+                <div>
                     <!--<h1 class="title ">Welcome Kendyr</h1>
                     <button class="btn place-items-center">
                         <i class="ri-menu-3-line open-menu-icon"></i>
                     </button>-->
+                    <button id="hideSecondary">
+                        <i class="ri-menu-3-line open-menu-icon"></i>
+                    </button>
 
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">Profile</a>
+                            <a href="index.html" class="nav-link active">Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Dashboard</a>
+                            <a href="calendar.html" class="nav-link">Calendar</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Settings</a>
@@ -229,6 +224,7 @@
             <!-- /MAIN BODY WITH KPI CARDS -->
 
             <!-- RIGHT SIDEBAR -->
+
             <section class="secondary-container ">
                 <div class="profile d-flex">
                     <div class="profile-img-box">
@@ -288,7 +284,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
 <script src="./assets/chart.js"></script>
 <script src="./assets/main.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
 
 </html>
