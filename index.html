@@ -20,36 +20,48 @@
     <div class="dashboard ">
 
         <!-- LEFT SIDE BAR ICONS -->
-        <div class="sidebar place-items-center ">
+        <div class="sidebar place-items-center">
+            <div class="expand-btn">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.00979 2.72L10.3565 7.06667C10.8698 7.58 10.8698 8.42 10.3565 8.93333L6.00979 13.28"
+                          stroke="#4A516D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
             <div class="sidebar-items">
-                <div class="sidebar-item s-item-profile  place-items-center ">
-                    <a href="#">
-                        <img src="assets/images/kendyr.jpg" alt="">
-                    </a>
-                </div>
-                <div class="sidebar-item s-item-home  place-items-center ">
-                    <a href="#">
+
+                <!-- Icon for Home -->
+                <div class="sidebar-item s-item-home place-items-center">
+                    <a class="hov" href="#">
                         <i class="ri-home-line"></i>
+                        <span class="icon-name hide">Home</span>
                     </a>
                 </div>
-                <div class="sidebar-item s-item-1  place-items-center ">
-                    <a href="#">
+                <!-- Icon for Chart -->
+                <div class="sidebar-item s-item-chart place-items-center">
+                    <a class="hov" href="#">
                         <i class="ri-line-chart-line"></i>
+                        <span class="icon-name hide">Chart</span>
                     </a>
                 </div>
-                <div class="sidebar-item s-item-2 place-items-center">
-                    <a href="./#">
+                <!-- Icon for Wallet -->
+                <div class="sidebar-item s-item-wallet place-items-center">
+                    <a class="hov" href="#">
                         <i class="ri-wallet-line"></i>
+                        <span class="icon-name hide">Wallet</span>
                     </a>
                 </div>
-                <div class="sidebar-item s-item-3 place-items-center">
-                    <a href="#">
+                <!-- Icon for Calendar -->
+                <div class="sidebar-item s-item-calendar place-items-center">
+                    <a class="hov" href="#">
                         <i class="ri-calendar-line"></i>
+                        <span class="icon-name hide">Calendar</span>
                     </a>
                 </div>
-                <div class="sidebar-item s-item-4 place-items-center">
-                    <a href="./#">
-                        <i class="ri-pencil-fill"></i>
+                <!-- Icon for Edit -->
+                <div class="sidebar-item s-item-edit place-items-center">
+                    <a class="hov" href="#">
+                        <i class="ri-settings-2-fill"></i>
+                        <span class="icon-name hide">Settings</span>
                     </a>
                 </div>
             </div>
@@ -62,26 +74,29 @@
             <section class="main-container">
 
                 <div>
-                    <!--<h1 class="title ">Welcome Kendyr</h1>
-                    <button class="btn place-items-center">
+                    <h1 class="title ">Welcome Kendyr</h1>
+                    <!--<button class="btn place-items-center">
                         <i class="ri-menu-3-line open-menu-icon"></i>
                     </button>-->
-                    <button id="hideSecondary">
+                    <!--<button id="hideSecondary">
                         <i class="ri-menu-3-line open-menu-icon"></i>
-                    </button>
+                    </button>-->
 
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link active">Profile</a>
+                            <a href="index.html" class="nav-link active">Home <i class="ri-home-line align-icon"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a href="calendar.html" class="nav-link">Calendar</a>
+                            <a href="calendar.html" class="nav-link">Chart <i class="ri-line-chart-line align-icon"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Settings</a>
+                            <a href="#" class="nav-link">Wallet <i class="ri-wallet-line align-icon"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Invoice</a>
+                            <a href="#" class="nav-link">Calendar <i class="ri-calendar-line align-icon"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Settings <i class="ri-settings-2-fill align-icon"></i></a>
                         </li>
                     </ul>
                 </div>
